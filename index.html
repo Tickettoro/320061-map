@@ -100,6 +100,37 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
 
 @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(250,204,21,0.7); } 50% { box-shadow: 0 0 0 12px rgba(250,204,21,0); } }
 .marker-highlight { animation: pulse 1.2s infinite; }
+
+@media (max-width: 640px) {
+    .search-panel {
+        left: 8px; right: 8px; top: 8px; width: auto;
+        border-radius: 10px;
+    }
+    .search-bar { padding: 4px 8px; }
+    .search-bar input { font-size: 16px; padding: 6px 0; }
+    .search-filters { padding: 4px 8px; gap: 3px; }
+    .filter-chip { padding: 4px 8px; font-size: 10px; }
+    .search-results.open { max-height: 200px; }
+
+    .info-panel {
+        top: auto; bottom: 60px; right: 8px; left: 8px;
+        max-width: none; max-height: 40vh;
+        padding: 10px 14px; border-radius: 10px;
+    }
+    .info-panel h2 { font-size: 13px; }
+    .info-panel .subtitle { font-size: 10px; margin-bottom: 6px; }
+    .stat-row { padding: 3px 0; }
+    .section-title { margin: 6px 0 4px; }
+
+    .layer-toggle { bottom: 16px; left: 8px; }
+    .layer-toggle button { padding: 5px 10px; font-size: 11px; }
+
+    .leaflet-popup-content { min-width: 200px; margin: 10px 12px; font-size: 12px; }
+    .popup-title { font-size: 12px; }
+    .popup-label { min-width: 60px; font-size: 10px; }
+    .popup-val { font-size: 11px; }
+    .popup-violations { font-size: 10px; padding: 4px 6px; }
+}
 </style>
 </head>
 <body>
